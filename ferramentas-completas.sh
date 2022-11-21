@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install golang
+apt install golang -y
 
 mkdir /root/ferramentas
 mkdir /root/ferramentas/bounts
