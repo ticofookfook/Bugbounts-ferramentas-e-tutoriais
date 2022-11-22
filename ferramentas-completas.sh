@@ -26,6 +26,11 @@ echo "xargs -a AliveJs.txt -n 2 -I@ bash -c \"echo -e '\n[URL]: @\n'; python3 /h
 
 wget https://raw.githubusercontent.com/tomnomnom/hacks/master/anti-burl/main.go ;go build main.go ; rm main.go ; mv main anti-burl ; mv anti-burl /usr/bin/
 
+echo "subfinder -d yahoo.com -silent | httpx -silent >> domains | ssrftool -domains domains -payloads important/ssrf.txt -silent=false -paths=true -patterns important/patterns.txt" > /root/ferramentas/bounts/ssrf.txt 
+echo "echo \"https://www.twitter.com\" | getJS -complete | anew domains | ssrftool -domains domains -silent=false -brute=true -gen=true -patterns patterns.txt  -parameters params.txt" >> /root/ferramentas/bounts/ssrf.txt 
+echo "echo \"twitter.com\" | waybackurls >> domains; ssrftool -domains domains -silent=false -paths=false -payloads important/ssrf.txt" >> /root/ferramentas/bounts/ssrf.txt 
+
+
 echo "pegando os js com status 200 = cat js | anti-burl  | anew jsonly.txt" > /root/ferramentas/bounts/anti-burl.txt
 
 go install github.com/tomnomnom/waybackurls@latest
