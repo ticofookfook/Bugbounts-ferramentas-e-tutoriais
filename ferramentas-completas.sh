@@ -21,6 +21,10 @@ echo "brute diretorio = ffuf -u https://url.txt/FUZZ -w /usr/share/wordlists/dir
 echo "brute parametros=  ffuf -u https://url.txt/install.php?FUZZ=test -w /usr/share/wordlists/dirb/common.txt -fs tamanho-do-lenght-que-quer excluir" >> /root/ferramentas/bounts/ffuf.txt 
 
 cd /root/ferramentas;git clone https://github.com/GerbenJavado/LinkFinder.git;cd LinkFinder; python3 setup.py install;cd ..
+cd /root/ferramentas;git clone https://github.com/cujanovic/SSRF-Testing.git;cd ..
+cd /root/ferramentas; git clone https://github.com/R0X4R/ssrf-tool.git;cd ssrf-tool;go build ssrftool.go && mv ssrftool /usr/bin/;cd ..
+
+
 
 echo "xargs -a AliveJs.txt -n 2 -I@ bash -c \"echo -e '\n[URL]: @\n'; python3 /home/steven/linkfinder.py -i @ -o cli\"​" > /root/ferramentas/bounts/linkfinder-end-points-do-js.txt
 
