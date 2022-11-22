@@ -10,7 +10,7 @@ mkdir /root/ferramentas/wordlists/parametros
 mkdir /root/ferramentas/wordlists/api-end-points
 mkdir /root/ferramentas/wordlists/subdomains
 mkdir /root/ferramentas/wordlists/path-tranversal
-
+mkdir /root/ferramentas/wordlists/ssrf
 
 
 
@@ -137,7 +137,7 @@ cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://github.com/omurugu
 
 cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://github.com/omurugur/Path_Travelsal_Payload_List/blob/master/Payload/Deep-Travelsal.txt;mv Deep-Travelsal.txt path-tranversal-2.txt;cd ..
 
-
+cd /root/ferramentas/wordlists/ssrf; wget https://github.com/R0X4R/ssrf-tool/blob/main/important/payloads.txt;cd ..
 cd /root/ferramentas/ ; git clone https://github.com/ticofookfook/Git-dorcker.git ; cd Git-dorcker ; pip3 install -r requerimentos.txt ;chmod +x dork.sh ;cd ..
 
 echo "salve seu token api do git no arquivo tokenfile dentro da pasta tf =python3 GitDorker.py -tf TOKENSFILE -q tesla.com -d Dorks/DORKFILE -o tesla" > /root/ferramentas/bounts/git-dorks.txt
