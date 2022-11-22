@@ -34,7 +34,7 @@ echo "cat domains.txt | waybackurls | grep -Eo \"(http|https)://[^/\"].*.js+\"|h
 echo "ssti = waybackurls usaa.com | qsreplace \"test{{7*7}}\" | ffuf -w - -u FUZZ -mr \"test49\" -t 300 -o chaos.ssti.txt" >> /root/ferramentas/bounts/waybackurls-grep-js.txt
 
 
-
+go install github.com/003random/getJS@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
 
 echo "getallurls (gau) busca URLs conhecidas do AlienVault's Open Threat Exchange , Wayback Machine, Common Crawl e URLScan para qualquer domínio específico. Inspirado pelos waybackurls de Tomnomnom" > /root/ferramentas/bounts/gau.txt
