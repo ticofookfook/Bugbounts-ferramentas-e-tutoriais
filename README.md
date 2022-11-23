@@ -9,3 +9,5 @@ route |  awk {'print $1'} | grep  [[:digit:]];echo -e "\e[1;41;1;45mColoqueo ip 
 
 <h2>Dowlonad do socat para o pivoting</h2>
 wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat;chmod +x socat ;./socat -h
+
+Tutorial = https://deephacking.tech/pivoting-con-socat/
