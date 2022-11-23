@@ -1,4 +1,5 @@
 #!/bin/bash
+apt update -y ; apt upgrade -y ; apt update -y
 
 apt install golang -y
 
