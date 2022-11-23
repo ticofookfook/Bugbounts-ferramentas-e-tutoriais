@@ -10,7 +10,7 @@ Esse script baixa as ferramentas mais utilizadas em pentest e bounts, cria arqui
 <h3>script 2 = </h3> echo -e "443\n80" | while read port; do echo "[Port] $port";echo 192.168.0.{0..255} | tr ' ' '\n' | xargs -P200 -I@ timeout 2 bash -c '2>- </dev/tcp/@/'$port' && echo "[OPEN] @:"'$port;done
 
 
-<h2>Dowlonad do socat para o pivoting</h2>
+<h3>Dowlonad do socat para o pivoting</h3>
 Comand = wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat;chmod +x socat ;./socat -h
 
 Tutorial = https://deephacking.tech/pivoting-con-socat/
