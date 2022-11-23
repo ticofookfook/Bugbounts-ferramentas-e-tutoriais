@@ -131,23 +131,23 @@ cd /root/ferramentas/wordlists/subdomains/ ;wget https://wordlists-cdn.assetnote
 
 cd /root/ferramentas/wordlists/subdomains/ ;wget https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/SQLi-parameters.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wget https://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/SQLi-parameters.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/lfi-parameters.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wget https://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/lfi-parameters.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/openredirect-parameters.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wget https://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/openredirect-parameters.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/rce-paramaters-get-based.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wgethttps://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/rce-paramaters-get-based.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/ssrf-parameters.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wget https://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/ssrf-parameters.txt;cd ..
 
-cd /root/ferramentas/wordlists/parametros/ ;wget https://github.com/lutfumertceylan/top25-parameter/blob/master/xss-parameters.txt;cd ..
+cd /root/ferramentas/wordlists/parametros/ ;wget https://raw.githubusercontent.com/lutfumertceylan/top25-parameter/master/xss-parameters.txt;cd ..
 
-cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://github.com/omurugur/Path_Travelsal_Payload_List/blob/master/Payload/Dp.txt;mv Dp.txt path-tranversal.txt; cd ..
+cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://raw.githubusercontent.com/omurugur/Path_Travelsal_Payload_List/master/Payload/Dp.txt; cd ..
 
-cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://github.com/omurugur/Path_Travelsal_Payload_List/blob/master/Payload/Deep-Travelsal.txt;mv Deep-Travelsal.txt path-tranversal-2.txt;cd ..
+cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://raw.githubusercontent.com/omurugur/Path_Travelsal_Payload_List/master/Payload/Deep-Travelsal.txt;mv Deep-Travelsal.txt path-tranversal-2.txt;cd ..
 
-cd /root/ferramentas/wordlists/ssrf; wget https://github.com/R0X4R/ssrf-tool/blob/main/important/payloads.txt;cd ..
+cd /root/ferramentas/wordlists/ssrf; wget https://raw.githubusercontent.com/R0X4R/ssrf-tool/main/important/payloads.txt;cd ..
 cd /root/ferramentas/ ; git clone https://github.com/ticofookfook/Git-dorcker.git ; cd Git-dorcker ; pip3 install -r requerimentos.txt ;chmod +x dork.sh ;cd ..
 
 echo "salve seu token api do git no arquivo tokenfile dentro da pasta tf =python3 GitDorker.py -tf TOKENSFILE -q tesla.com -d Dorks/DORKFILE -o tesla" > /root/ferramentas/bounts/git-dorks.txt
