@@ -5,7 +5,7 @@ Esse script baixa as ferramentas mais utilizadas em pentest e bounts, cria arqui
 <h1>Para fazer um scan na rede do alvo procurando novos ips internos ativos com portas abertas</h1>
 
 
-<h1>Dowlonad do socat para o pivoting</h1>
+<h2>Dowlonad do socat para o pivoting</h2>
 
 Comand = wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat;chmod +x socat ;./socat -h
 
