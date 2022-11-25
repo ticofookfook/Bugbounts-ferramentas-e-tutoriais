@@ -17,3 +17,5 @@ route|awk '{print $1}'|grep [[:digit:]] || ip route list |awk '{print $1}'|grep 
 Comand = wget https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat;chmod +x socat ;./socat -h
 
 Tutorial = https://deephacking.tech/pivoting-con-socat/
+</br>
+Uso= ./socat tcp-l:7878,fork,reuseaddr tcp:172.16.0.147:80 &
