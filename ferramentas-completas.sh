@@ -101,6 +101,7 @@ echo "​echo 'paypal' | metabigor net --org -v | awk '{print $3}' | sed 's/[[0-
 echo "enum org = echo 'dod' | metabigor net --org​" >> /root/ferramentas/bounts/asn-box-de-ip-enum.txt
 
 cd /root/ferramentas/ ;git clone https://github.com/devanshbatham/ParamSpider; cd ParamSpider;pip3 install -r requirements.txt; cd ..
+cd /root/ferramentas/ ;git clone https://github.com/Th0h0/autossrf.git; cd autossrf;pip3 install -r requirements.txt; cd ..
 
 echo "python3 /root/ferramentas/ParamSpider/paramspider.py --domain hackerone.com --exclude php,jpg,svg --output site.txt" > /root/ferramentas/bounts/paramspider.txt
 
