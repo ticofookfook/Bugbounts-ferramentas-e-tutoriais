@@ -38,3 +38,5 @@ echo "site:\"$site\" intext:\"d.aspx?id\" || inurl:\"d.aspx?id\""
 echo 
 echo "site:\"$site\" intext:SQLiteManager inurl:main.php"
 echo ""
+echo "site:\"$site\" filetype:inc intext:mysql_connect"
+echo ""
