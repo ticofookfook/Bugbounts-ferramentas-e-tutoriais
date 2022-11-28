@@ -43,7 +43,7 @@ echo "cat domains.txt | waybackurls | grep -Eo \"(http|https)://[^/\"].*.js+\"|h
 
 echo "ssti = waybackurls usaa.com | qsreplace \"test{{7*7}}\" | ffuf -w - -u FUZZ -mr \"test49\" -t 300 -o chaos.ssti.txt" >> /root/ferramentas/bounts/waybackurls-grep-js.txt
 
-
+go install github.com/tomnomnom/gf@latest
 go install github.com/003random/getJS@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
 
