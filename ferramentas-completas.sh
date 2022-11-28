@@ -53,7 +53,7 @@ echo "gau example.com google.com" >> /root/ferramentas/bounts/gau.txt
 echo "gau --o example-urls.txt example.com" >> /root/ferramentas/bounts/gau.txt
 echo "gau --blacklist png,jpg,gif example.com" >> /root/ferramentas/bounts/gau.txt
 
-
+GO111MODULE=on go install github.com/jaeles-project/gospider@latest
 go install -v github.com/lc/subjs@latest
 
 echo "cat hosts.txt | gau | subjs |anew js.txt " > /root/ferramentas/bounts/subjs.txt
