@@ -22,7 +22,7 @@ echo "site:\"$site\" inurl:secring ext:skr | ext:pgp | ext:bak | ext:pdf | ext:x
 echo 
 echo "site:\"$site\" filetype:lic lic intext:key"
 echo 
-echo "site:\"$site\" intext:key | [intext:cpf | [intext:password | [intext:senha | intext:hash"
+echo "site:\"$site\" intext:key | intext:cpf | intext:password | intext:senha | intext:hash"
 echo 
 echo "site:\"$site\" inurl:\"wvdial.conf\" intext:\"password\""
 echo 
