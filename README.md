@@ -35,4 +35,4 @@ gf = (ssrf,xss,ssti,sqli,redirect,rce,lfi,jsvar,interestingsubs,insterestingpara
 
 jogando para sqlmap:
 
-while read line; do sqlmap -u $line --parse-erros --current-db --invalid-logical --invalid-bignum --invalid-string --riks 3;done sqli.txt
+while read line; do sqlmap -u $line --parse-erros --current-db --invalid-logical --invalid-bignum --invalid-string --riks 3;done < sqli.txt
