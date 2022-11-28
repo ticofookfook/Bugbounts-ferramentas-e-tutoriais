@@ -25,7 +25,7 @@ cd /root/ferramentas;git clone https://github.com/GerbenJavado/LinkFinder.git;cd
 cd /root/ferramentas;git clone https://github.com/cujanovic/SSRF-Testing.git;cd ..
 cd /root/ferramentas; git clone https://github.com/R0X4R/ssrf-tool.git;cd ssrf-tool;go build ssrftool.go && mv ssrftool /usr/bin/;cd ..
 
-
+gem install parallel
 
 echo "xargs -a AliveJs.txt -n 2 -I@ bash -c \"echo -e '\n[URL]: @\n'; python3 /home/steven/linkfinder.py -i @ -o cli\"​" > /root/ferramentas/bounts/linkfinder-end-points-do-js.txt
 
