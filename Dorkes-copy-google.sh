@@ -1,4 +1,4 @@
-echo #!/bin/bash 
+#!/bin/bash 
 echo "" 
 echo -n "Coloque o site -->: ";read site
 echo ""
