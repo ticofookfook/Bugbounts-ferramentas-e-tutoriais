@@ -30,6 +30,8 @@ subfinder -d tesla.com -silent -all | httpx -silent -threads 100 | katana -d 4 -
 filtrando potenciais sqli: 
 
 cat urls | gf sqli | tee -a sqli.txt
+</br>
+gf = (ssrf,xss,ssti,sqli,redirect,rce,lfi,jsvar,interestingsubs,insterestingparams,interestingEXT,ido,dbug)
 
 jogando para sqlmap:
 
