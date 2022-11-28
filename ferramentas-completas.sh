@@ -38,6 +38,8 @@ echo "echo \"twitter.com\" | waybackurls >> domains; ssrftool -domains domains -
 
 echo "pegando os js com status 200 = cat js | anti-burl  | anew jsonly.txt" > /root/ferramentas/bounts/anti-burl.txt
 
+go install github.com/dwisiswant0/cf-check@latest
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 go install github.com/tomnomnom/waybackurls@latest
 echo "cat domains.txt | waybackurls | grep -Eo \"(http|https)://[^/\"].*.js+\"|httpx -silent | anew  " > /root/ferramentas/bounts/waybackurls-grep-js.txt
 
