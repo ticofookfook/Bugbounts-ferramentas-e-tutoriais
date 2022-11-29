@@ -50,5 +50,5 @@ php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///et
 
 <h1>Git exposed credentias com regex</h1>
 /ssh:\/\/.*:.*@.*target\.com/</br>
-/ftp:\/\/.*:.*@.*taget\.com//</br>
-/ssh:\/\/.*:.*@.*\.com/ NOT "git"/</br>
+/ftp:\/\/.*:.*@.*taget\.com/</br>
+/ssh:\/\/.*:.*@.*\.com/ NOT "git"</br>
