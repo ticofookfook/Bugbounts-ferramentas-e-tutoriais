@@ -21,9 +21,9 @@ apt install ffuf -y
 echo "brute diretorio = ffuf -u https://url.txt/FUZZ -w /usr/share/wordlists/dirb/common.txt"> /root/ferramentas/bounts/ffuf.txt
 echo "brute parametros=  ffuf -u https://url.txt/install.php?FUZZ=test -w /usr/share/wordlists/dirb/common.txt -fs tamanho-do-lenght-que-quer excluir" >> /root/ferramentas/bounts/ffuf.txt 
 
-cd /root/ferramentas;git clone https://github.com/GerbenJavado/LinkFinder.git;cd LinkFinder; python3 setup.py install;cd ..
-cd /root/ferramentas;git clone https://github.com/cujanovic/SSRF-Testing.git;cd ..
-cd /root/ferramentas; git clone https://github.com/R0X4R/ssrf-tool.git;cd ssrf-tool;go build ssrftool.go && mv ssrftool /usr/bin/;cd ..
+cd /root/ferramentas/;git clone https://github.com/GerbenJavado/LinkFinder.git;cd LinkFinder; python3 setup.py install;cd ..
+cd /root/ferramenta/;git clone https://github.com/cujanovic/SSRF-Testing.git;cd ..
+cd /root/ferramentas/; git clone https://github.com/R0X4R/ssrf-tool.git;cd ssrf-tool;go build ssrftool.go && mv ssrftool /usr/bin/;cd ..
 
 gem install parallel
 
@@ -152,7 +152,7 @@ cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://raw.githubusercont
 cd /root/ferramentas/wordlists/path-tranversal/ ;wget https://raw.githubusercontent.com/omurugur/Path_Travelsal_Payload_List/master/Payload/Deep-Travelsal.txt;mv Deep-Travelsal.txt path-tranversal-2.txt;cd ..
 
 cd /root/ferramentas/wordlists/ssrf; wget https://raw.githubusercontent.com/R0X4R/ssrf-tool/main/important/payloads.txt;cd ..
-cd /root/ferramentas/ ; git clone https://github.com/ticofookfook/Git-dorcker.git ; cd Git-dorcker ; pip3 install -r requerimentos.txt ;chmod +x dork.sh ;cd ..
+cd /root/ferramentas/ ; git clone https://github.com/ticofookfook/Git-dorcker.git ; cd Git-dorcker ; pip3 install -r requirements.txt ;chmod +x dork.sh ;cd ..
 
 echo "salve seu token api do git no arquivo tokenfile dentro da pasta tf =python3 GitDorker.py -tf TOKENSFILE -q tesla.com -d Dorks/DORKFILE -o tesla" > /root/ferramentas/bounts/git-dorks.txt
 
