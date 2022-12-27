@@ -18,6 +18,7 @@ mkdir /root/ferramentas/wordlists/ssrf
 
 apt install ffuf -y
 pip install as3nt -y
+go install -v github.com/shivangx01b/CorsMe@latest
 
 echo "brute diretorio = ffuf -u https://url.txt/FUZZ -w /usr/share/wordlists/dirb/common.txt"> /root/ferramentas/bounts/ffuf.txt
 echo "brute parametros=  ffuf -u https://url.txt/install.php?FUZZ=test -w /usr/share/wordlists/dirb/common.txt -fs tamanho-do-lenght-que-quer excluir" >> /root/ferramentas/bounts/ffuf.txt 
