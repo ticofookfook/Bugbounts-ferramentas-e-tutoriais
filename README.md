@@ -174,3 +174,10 @@ fragment TypeRef on __Type {
   }
 }
 </p>
+<h1>Python shell tty</h1>
+</br>
+python -c 'import os;os.system("/bin/bash");
+</br>
+crtl + z
+</br>
+stty raw -echo && fg
